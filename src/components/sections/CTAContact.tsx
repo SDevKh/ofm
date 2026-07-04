@@ -51,7 +51,7 @@ export default function CTAContact() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(135deg, rgba(77, 159, 255, 0.08) 0%, rgba(139, 92, 246, 0.12) 50%, rgba(244, 114, 182, 0.06) 100%)",
+              "linear-gradient(135deg, rgba(232, 165, 152, 0.08) 0%, rgba(212, 175, 55, 0.12) 50%, rgba(228, 204, 23, 0.06) 100%)",
             backgroundSize: "200% 200%",
             animation: "gradient-shift 8s ease infinite",
           }}
@@ -61,7 +61,7 @@ export default function CTAContact() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(77, 159, 255, 0.06) 0%, transparent 70%)",
+              "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 70%)",
           }}
           aria-hidden="true"
         />
@@ -69,12 +69,12 @@ export default function CTAContact() {
         {/* Glowing border top/bottom */}
         <div
           className="absolute top-0 left-0 right-0 h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(77, 159, 255, 0.4), rgba(139, 92, 246, 0.4), transparent)" }}
+          style={{ background: "linear-gradient(90deg, transparent, rgba(232, 165, 152, 0.35), rgba(212, 175, 55, 0.35), transparent)" }}
           aria-hidden="true"
         />
         <div
           className="absolute bottom-0 left-0 right-0 h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(139, 92, 246, 0.3), rgba(244, 114, 182, 0.3), transparent)" }}
+          style={{ background: "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.25), rgba(228, 204, 23, 0.25), transparent)" }}
           aria-hidden="true"
         />
 
@@ -89,7 +89,7 @@ export default function CTAContact() {
             </p>
             <h2
               className="text-4xl sm:text-6xl font-bold text-white mb-6"
-              style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+              style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
             >
               Ready to Scale Your{" "}
               <span className="gradient-text block sm:inline">
@@ -97,7 +97,7 @@ export default function CTAContact() {
               </span>
             </h2>
             <p className="text-white/55 text-lg sm:text-xl max-w-xl mx-auto mb-12">
-              Join 200+ creators who trust EliteCreator to handle their operations
+              Join 200+ creators who trust apsaraCreator to handle their operations
               while they focus on what they do best.
             </p>
 
@@ -145,7 +145,7 @@ export default function CTAContact() {
               </p>
               <h2
                 className="text-3xl sm:text-4xl font-bold text-white mb-6"
-                style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+                style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
               >
                 Start your{" "}
                 <span className="gradient-text">application</span>
@@ -158,17 +158,17 @@ export default function CTAContact() {
               {/* Contact details */}
               <div className="flex flex-col gap-4 mb-8">
                 <a
-                  href="mailto:hello@elitecreator.agency"
+                  href="mailto:hello@apsaracreator.agency"
                   className="flex items-center gap-3 text-white/60 hover:text-white transition-colors group"
                   style={{ display: "flex", alignItems: "center" }}
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(77, 159, 255, 0.1)", border: "1px solid rgba(77, 159, 255, 0.2)" }}
+                    style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
                   >
-                    <Mail size={16} style={{ color: "#4d9fff" }} />
+                    <Mail size={16} style={{ color: "var(--color-rose-gold)" }} />
                   </div>
-                  <span className="text-sm">hello@elitecreator.agency</span>
+                  <span className="text-sm">hello@apsaracreator.agency</span>
                 </a>
                 <a
                   href="#"
@@ -177,11 +177,11 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(139, 92, 246, 0.1)", border: "1px solid rgba(139, 92, 246, 0.2)" }}
+                    style={{ background: "rgba(232, 165, 152, 0.08)", border: "1px solid rgba(232, 165, 152, 0.2)" }}
                   >
                     <InstagramIcon size={16} />
                   </div>
-                  <span className="text-sm">@elitecreatoragency</span>
+                  <span className="text-sm">@apsaracreatoragency</span>
                 </a>
                 <a
                   href="#"
@@ -190,22 +190,22 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(244, 114, 182, 0.1)", border: "1px solid rgba(244, 114, 182, 0.2)" }}
+                    style={{ background: "rgba(228, 204, 23, 0.08)", border: "1px solid rgba(228, 204, 23, 0.2)" }}
                   >
                     <TwitterIcon size={16} />
                   </div>
-                  <span className="text-sm">@elitecreatoragency</span>
+                  <span className="text-sm">@apsaracreatoragency</span>
                 </a>
               </div>
 
               {/* Privacy assurance */}
               <div
                 className="p-4 rounded-xl"
-                style={{ background: "rgba(77, 255, 140, 0.05)", border: "1px solid rgba(77, 255, 140, 0.12)" }}
+                style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
               >
                 <div className="flex items-center gap-2 mb-1">
-                  <CheckCircle size={14} style={{ color: "#4dff8c" }} />
-                  <span className="text-xs font-semibold" style={{ color: "#4dff8c" }}>100% Confidential</span>
+                  <CheckCircle size={14} style={{ color: "#d4af37" }} />
+                  <span className="text-xs font-semibold" style={{ color: "#d4af37" }}>100% Confidential</span>
                 </div>
                 <p className="text-xs text-white/40">
                   Your information is never shared. All applications are reviewed in strict confidence by senior team members only.
@@ -226,13 +226,13 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-16 h-16 rounded-full flex items-center justify-center"
-                    style={{ background: "rgba(77, 255, 140, 0.1)", border: "1px solid rgba(77, 255, 140, 0.3)" }}
+                    style={{ background: "rgba(52, 211, 153, 0.1)", border: "1px solid rgba(52, 211, 153, 0.3)" }}
                   >
-                    <CheckCircle size={28} style={{ color: "#4dff8c" }} />
+                    <CheckCircle size={28} style={{ color: "#34d399" }} />
                   </div>
                   <h3
                     className="text-white text-2xl font-bold"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     Application Received!
                   </h3>
@@ -259,11 +259,11 @@ export default function CTAContact() {
                         onChange={(e) => setForm({ ...form, name: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/25 outline-none transition-all duration-200"
                         style={{
-                          background: "rgba(255,255,255,0.04)",
-                          border: "1px solid rgba(255,255,255,0.08)",
+                          background: "rgba(26, 12, 20, 0.45)",
+                          border: "1px solid rgba(232, 165, 152, 0.08)",
                         }}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(77, 159, 255, 0.4)")}
-                        onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                        onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                       />
                     </div>
                     <div>
@@ -278,11 +278,11 @@ export default function CTAContact() {
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                         className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/25 outline-none transition-all duration-200"
                         style={{
-                          background: "rgba(255,255,255,0.04)",
-                          border: "1px solid rgba(255,255,255,0.08)",
+                          background: "rgba(26, 12, 20, 0.45)",
+                          border: "1px solid rgba(232, 165, 152, 0.08)",
                         }}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(77, 159, 255, 0.4)")}
-                        onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                        onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                       />
                     </div>
                   </div>
@@ -296,16 +296,16 @@ export default function CTAContact() {
                       onChange={(e) => setForm({ ...form, monthly: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl text-sm text-white/80 outline-none transition-all duration-200 cursor-pointer"
                       style={{
-                        background: "rgba(255,255,255,0.04)",
-                        border: "1px solid rgba(255,255,255,0.08)",
+                        background: "rgba(26, 12, 20, 0.45)",
+                        border: "1px solid rgba(232, 165, 152, 0.08)",
                       }}
                     >
-                      <option value="" className="bg-[#0a0a0a]">Select range</option>
-                      <option value="0-1k" className="bg-[#0a0a0a]">$0 – $1,000</option>
-                      <option value="1k-5k" className="bg-[#0a0a0a]">$1,000 – $5,000</option>
-                      <option value="5k-15k" className="bg-[#0a0a0a]">$5,000 – $15,000</option>
-                      <option value="15k-50k" className="bg-[#0a0a0a]">$15,000 – $50,000</option>
-                      <option value="50k+" className="bg-[#0a0a0a]">$50,000+</option>
+                      <option value="" className="bg-[#120810]">Select range</option>
+                      <option value="0-1k" className="bg-[#120810]">$0 – $1,000</option>
+                      <option value="1k-5k" className="bg-[#120810]">$1,000 – $5,000</option>
+                      <option value="5k-15k" className="bg-[#120810]">$5,000 – $15,000</option>
+                      <option value="15k-50k" className="bg-[#120810]">$15,000 – $50,000</option>
+                      <option value="50k+" className="bg-[#120810]">$50,000+</option>
                     </select>
                   </div>
 
@@ -320,11 +320,11 @@ export default function CTAContact() {
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       className="w-full px-4 py-3 rounded-xl text-sm text-white placeholder-white/25 outline-none transition-all duration-200 resize-none"
                       style={{
-                        background: "rgba(255,255,255,0.04)",
-                        border: "1px solid rgba(255,255,255,0.08)",
+                        background: "rgba(26, 12, 20, 0.45)",
+                        border: "1px solid rgba(232, 165, 152, 0.08)",
                       }}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(77, 159, 255, 0.4)")}
-                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(255,255,255,0.08)")}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                      onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                     />
                   </div>
 

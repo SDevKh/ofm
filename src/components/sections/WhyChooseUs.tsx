@@ -44,7 +44,7 @@ export default function WhyChooseUs() {
       <div
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(139, 92, 246, 0.04) 0%, transparent 60%)",
+          background: "radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 60%)",
           filter: "blur(80px)",
         }}
         aria-hidden="true"
@@ -59,11 +59,11 @@ export default function WhyChooseUs() {
           className="text-center mb-16"
         >
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/30 mb-3">
-            Why EliteCreator
+            Why apsaraCreator
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             The difference is{" "}
             <span className="gradient-text">night and day</span>
@@ -84,32 +84,32 @@ export default function WhyChooseUs() {
             <div
               className="absolute inset-0 rounded-2xl"
               style={{
-                background: "linear-gradient(135deg, rgba(77,159,255,0.3), rgba(139,92,246,0.2), rgba(244,114,182,0.1))",
+                background: "linear-gradient(135deg, rgba(232,165,152,0.35), rgba(212,175,55,0.22), rgba(228,204,23,0.1))",
                 padding: "1px",
               }}
             />
             <div
               className="relative rounded-2xl p-6 sm:p-8 h-full"
               style={{
-                background: "rgba(77, 159, 255, 0.04)",
-                border: "1px solid rgba(77, 159, 255, 0.2)",
-                boxShadow: "0 0 40px rgba(77, 159, 255, 0.06), inset 0 1px 0 rgba(77, 159, 255, 0.1)",
+                background: "rgba(26, 12, 20, 0.45)",
+                border: "1px solid rgba(232, 165, 152, 0.1)",
+                boxShadow: "0 0 40px rgba(212, 175, 55, 0.06), inset 0 1px 0 rgba(232, 165, 152, 0.05)",
               }}
             >
               {/* Header */}
               <div className="flex items-center gap-3 mb-8">
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center"
-                  style={{ background: "linear-gradient(135deg, #4d9fff, #8b5cf6)" }}
+                  style={{ background: "linear-gradient(135deg, #e8a598, #d4af37)" }}
                 >
-                  <Zap size={18} className="text-white" fill="white" />
+                  <Zap size={18} className="text-[#0e0712]" fill="#0e0712" />
                 </div>
                 <div>
                   <div
                     className="text-white font-bold text-lg"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
-                    EliteCreator Agency
+                    ApsaraCreator Agency
                   </div>
                   <div className="text-xs text-white/40">Premium Management</div>
                 </div>
@@ -126,9 +126,9 @@ export default function WhyChooseUs() {
                   >
                     <div
                       className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0"
-                      style={{ background: "rgba(77, 255, 140, 0.15)", border: "1px solid rgba(77, 255, 140, 0.3)" }}
+                      style={{ background: "rgba(212, 175, 55, 0.12)", border: "1px solid rgba(212, 175, 55, 0.25)" }}
                     >
-                      <Check size={11} style={{ color: "#4dff8c" }} strokeWidth={3} />
+                      <Check size={11} style={{ color: "#d4af37" }} strokeWidth={3} />
                     </div>
                     <span className="text-white/85 text-sm font-medium">{feature}</span>
                   </motion.li>
@@ -160,7 +160,7 @@ export default function WhyChooseUs() {
               <div>
                 <div
                   className="text-white/50 font-bold text-lg"
-                  style={{ fontFamily: "var(--font-space-grotesk)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   Other Agencies
                 </div>

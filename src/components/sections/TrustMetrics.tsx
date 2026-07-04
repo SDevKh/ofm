@@ -105,7 +105,7 @@ export default function TrustMetrics() {
       {/* Divider line top */}
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 opacity-30"
-        style={{ background: "linear-gradient(to bottom, transparent, #4d9fff)" }}
+        style={{ background: "linear-gradient(to bottom, transparent, var(--color-amber-gold))" }}
         aria-hidden="true"
       />
 
@@ -122,7 +122,7 @@ export default function TrustMetrics() {
           </p>
           <h2
             className="text-3xl sm:text-4xl font-bold text-white"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.02em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
           >
             Results that speak{" "}
             <span className="gradient-text">for themselves</span>
@@ -144,13 +144,13 @@ export default function TrustMetrics() {
               >
                 <div
                   className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-4"
-                  style={{ background: "rgba(77, 159, 255, 0.1)", border: "1px solid rgba(77, 159, 255, 0.2)" }}
+                  style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
                 >
-                  <Icon size={18} style={{ color: "#4d9fff" }} />
+                  <Icon size={18} style={{ color: "var(--color-rose-gold)" }} />
                 </div>
                 <div
                   className="text-3xl sm:text-4xl font-bold gradient-text mb-2"
-                  style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.02em" }}
+                  style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
                 >
                   <AnimatedCounter
                     end={stat.end}

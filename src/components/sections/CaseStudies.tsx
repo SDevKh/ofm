@@ -73,7 +73,7 @@ const caseStudies = [
     creator: "Creator A",
     niche: "Fitness & Lifestyle",
     avatar: "A",
-    avatarColor: "#4d9fff",
+    avatarColor: "#d4af37",
     revenue: "$18,400/mo",
     revenueGrowth: "+340%",
     followers: "47K",
@@ -81,14 +81,14 @@ const caseStudies = [
     monthlyGrowth: "+28%",
     duration: "6 months",
     chartData: [1200, 1800, 2400, 4100, 6800, 9200, 12400, 14600, 16900, 18400],
-    color: "#4d9fff",
+    color: "#d4af37",
     quote: "My revenue tripled in the first 90 days. Best decision I ever made.",
   },
   {
     creator: "Creator B",
     niche: "Fashion & Beauty",
     avatar: "B",
-    avatarColor: "#8b5cf6",
+    avatarColor: "#e8a598",
     revenue: "$31,200/mo",
     revenueGrowth: "+510%",
     followers: "128K",
@@ -96,14 +96,14 @@ const caseStudies = [
     monthlyGrowth: "+35%",
     duration: "8 months",
     chartData: [2100, 3400, 5800, 8200, 12400, 16800, 21000, 25600, 28900, 31200],
-    color: "#8b5cf6",
+    color: "#e8a598",
     quote: "I went from $5K to $31K monthly in under a year. Absolutely insane.",
   },
   {
     creator: "Creator C",
     niche: "Gaming & Entertainment",
     avatar: "C",
-    avatarColor: "#f472b6",
+    avatarColor: "#e4cc17",
     revenue: "$9,800/mo",
     revenueGrowth: "+220%",
     followers: "22K",
@@ -111,7 +111,7 @@ const caseStudies = [
     monthlyGrowth: "+18%",
     duration: "4 months",
     chartData: [1800, 2200, 3100, 4200, 5500, 6800, 7600, 8400, 9100, 9800],
-    color: "#f472b6",
+    color: "#e4cc17",
     quote: "Professional, private, and they actually deliver. No BS.",
   },
 ];
@@ -130,7 +130,7 @@ export default function CaseStudies() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(77, 159, 255, 0.04) 0%, transparent 60%)",
+            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(212, 175, 55, 0.03) 0%, transparent 60%)",
         }}
         aria-hidden="true"
       />
@@ -148,7 +148,7 @@ export default function CaseStudies() {
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white mb-5"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Creator success{" "}
             <span className="gradient-text">stories</span>
@@ -186,7 +186,7 @@ export default function CaseStudies() {
                     <div>
                       <div
                         className="text-white font-semibold"
-                        style={{ fontFamily: "var(--font-space-grotesk)" }}
+                        style={{ fontFamily: "var(--font-display)" }}
                       >
                         {cs.creator}
                       </div>
@@ -202,14 +202,14 @@ export default function CaseStudies() {
                     className="text-3xl font-bold mb-1"
                     style={{
                       color: cs.color,
-                      fontFamily: "var(--font-space-grotesk)",
+                      fontFamily: "var(--font-display)",
                     }}
                   >
                     {cs.revenue}
                   </div>
                   <div className="flex items-center gap-1.5">
-                    <TrendingUp size={12} style={{ color: "#4dff8c" }} />
-                    <span className="text-xs font-semibold" style={{ color: "#4dff8c" }}>
+                    <TrendingUp size={12} style={{ color: "#34d399" }} />
+                    <span className="text-xs font-semibold" style={{ color: "#34d399" }}>
                       {cs.revenueGrowth} revenue growth
                     </span>
                   </div>
@@ -224,7 +224,7 @@ export default function CaseStudies() {
               {/* Stats row */}
               <div
                 className="mx-5 sm:mx-6 mb-5 sm:mb-6 p-3 sm:p-4 rounded-xl grid grid-cols-2 gap-3"
-                style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.05)" }}
+                style={{ background: "rgba(26, 12, 20, 0.45)", border: "1px solid rgba(232, 165, 152, 0.08)" }}
               >
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-1 mb-0.5">
@@ -232,7 +232,7 @@ export default function CaseStudies() {
                     <span className="text-xs text-white/40">Followers</span>
                   </div>
                   <div className="font-bold text-white text-sm">{cs.followers}</div>
-                  <div className="text-xs" style={{ color: "#4dff8c" }}>{cs.followerGrowth}</div>
+                  <div className="text-xs" style={{ color: "#34d399" }}>{cs.followerGrowth}</div>
                 </div>
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-1 mb-0.5">

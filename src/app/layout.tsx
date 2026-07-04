@@ -1,25 +1,41 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter } from "next/font/google";
+import { Playfair_Display, DM_Sans, DM_Mono, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+import { Navbar, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarLogo, NavbarButton } from "@/components/ui/resizable-navbar";
 
-const spaceGrotesk = Space_Grotesk({
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const navItems = [
+  { name: "Features", link: "/features" },
+  { name: "Pricing", link: "/pricing" },
+  { name: "Contact", link: "/contact" }
+];
+
+const playfair = Playfair_Display({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-space-grotesk",
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-playfair-display",
   display: "swap",
 });
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+const dmMono = DM_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500"],
+  variable: "--font-dm-mono",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "EliteCreator Agency — Premium OnlyFans Management",
+  title: "apsaraCreator Agency — Premium OnlyFans Management",
   description:
-    "Scale your creator business without managing it yourself. EliteCreator handles strategy, fan messaging, marketing, growth, and operations so you can focus on creating.",
+    "Scale your creator business without managing it yourself. apsaraCreator handles strategy, fan messaging, marketing, growth, and operations so you can focus on creating.",
   keywords: [
     "OnlyFans management agency",
     "OFM agency",
@@ -29,33 +45,33 @@ export const metadata: Metadata = {
     "content strategy",
     "OnlyFans growth",
   ],
-  authors: [{ name: "EliteCreator Agency" }],
-  creator: "EliteCreator Agency",
-  metadataBase: new URL("https://elitecreator.agency"),
+  authors: [{ name: "apsaraCreator Agency" }],
+  creator: "apsaraCreator Agency",
+  metadataBase: new URL("https://apsaracreator.agency"),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://elitecreator.agency",
-    title: "EliteCreator Agency — Premium OnlyFans Management",
+    url: "https://apsaracreator.agency",
+    title: "apsaraCreator Agency — Premium OnlyFans Management",
     description:
       "Scale your creator business without managing it yourself. Expert strategy, growth, and operations.",
-    siteName: "EliteCreator Agency",
+    siteName: "apsaraCreator Agency",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "EliteCreator Agency",
+        alt: "apsaraCreator Agency",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "EliteCreator Agency — Premium OnlyFans Management",
+    title: "apsaraCreator Agency — Premium OnlyFans Management",
     description:
       "Scale your creator business without managing it yourself.",
     images: ["/og-image.png"],
-    creator: "@elitecreatoragency",
+    creator: "@apsaracreatoragency",
   },
   robots: {
     index: true,
@@ -73,17 +89,17 @@ export const metadata: Metadata = {
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "EliteCreator Agency",
+  name: "apsaraCreator Agency",
   description:
     "Premium international OnlyFans management agency providing strategy, growth, and operations for creators.",
-  url: "https://elitecreator.agency",
+  url: "https://apsaracreator.agency",
   sameAs: [
-    "https://twitter.com/elitecreatoragency",
-    "https://instagram.com/elitecreatoragency",
+    "https://twitter.com/apsaracreatoragency",
+    "https://instagram.com/apsaracreatoragency",
   ],
   contactPoint: {
     "@type": "ContactPoint",
-    email: "hello@elitecreator.agency",
+    email: "hello@apsaracreator.agency",
     contactType: "customer service",
     availableLanguage: "English",
   },
@@ -97,14 +113,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable}`}
+      className={cn(playfair.variable, dmSans.variable, dmMono.variable, "font-sans", geist.variable)}
     >
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
-        <link rel="canonical" href="https://elitecreator.agency" />
+        <link rel="canonical" href="https://apsaracreator.agency" />
       </head>
       <body className="antialiased">
         {children}

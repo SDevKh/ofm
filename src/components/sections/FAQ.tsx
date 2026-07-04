@@ -57,8 +57,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
       transition={{ delay: index * 0.06 }}
       className="rounded-2xl overflow-hidden transition-all duration-300"
       style={{
-        background: open ? "rgba(77, 159, 255, 0.05)" : "rgba(255,255,255,0.03)",
-        border: open ? "1px solid rgba(77, 159, 255, 0.2)" : "1px solid rgba(255,255,255,0.07)",
+        background: open ? "rgba(212, 175, 55, 0.06)" : "rgba(26, 12, 20, 0.45)",
+        border: open ? "1px solid rgba(212, 175, 55, 0.22)" : "1px solid rgba(232, 165, 152, 0.08)",
       }}
     >
       <button
@@ -67,8 +67,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
         aria-expanded={open}
       >
         <span
-          className="text-white font-medium text-sm sm:text-base leading-relaxed"
-          style={{ fontFamily: "var(--font-space-grotesk)" }}
+          className="text-white font-medium text-sm sm:text-base leading-relaxed animate-fade-in"
+          style={{ fontFamily: "var(--font-display)" }}
         >
           {q}
         </span>
@@ -76,8 +76,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
           className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
           style={{
             background: open
-              ? "linear-gradient(135deg, #4d9fff, #8b5cf6)"
-              : "rgba(255,255,255,0.06)",
+              ? "linear-gradient(135deg, #e8a598, #d4af37)"
+              : "rgba(26, 12, 20, 0.45)",
           }}
         >
           {open ? (
@@ -99,7 +99,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
             <div className="px-5 sm:px-6 pb-4 sm:pb-5">
               <div
                 className="h-px mb-4"
-                style={{ background: "rgba(77, 159, 255, 0.15)" }}
+                style={{ background: "rgba(232, 165, 152, 0.12)" }}
               />
               <p className="text-white/55 text-sm leading-relaxed">{a}</p>
             </div>
@@ -124,7 +124,7 @@ export default function FAQ() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(139, 92, 246, 0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -142,7 +142,7 @@ export default function FAQ() {
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white mb-5"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Everything you need{" "}
             <span className="gradient-text">to know</span>
@@ -150,11 +150,11 @@ export default function FAQ() {
           <p className="text-white/50 text-lg max-w-lg mx-auto">
             Have more questions? Reach out at{" "}
             <a
-              href="mailto:hello@elitecreator.agency"
+              href="mailto:hello@apsaracreator.agency"
               className="underline underline-offset-2"
-              style={{ color: "#4d9fff" }}
+              style={{ color: "#d4af37" }}
             >
-              hello@elitecreator.agency
+              hello@apsaracreator.agency
             </a>
           </p>
         </motion.div>

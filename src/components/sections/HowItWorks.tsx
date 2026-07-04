@@ -11,7 +11,7 @@ const steps = [
     title: "Apply",
     description:
       "Fill out our quick application to tell us about your current numbers, goals, and niche. Takes 3 minutes.",
-    color: "#4d9fff",
+    color: "#d4af37",
   },
   {
     number: "02",
@@ -19,7 +19,7 @@ const steps = [
     title: "Discovery Call",
     description:
       "A senior strategist reviews your profile and holds a confidential 1-on-1 strategy session with you.",
-    color: "#6b8fef",
+    color: "#e8a598",
   },
   {
     number: "03",
@@ -27,7 +27,7 @@ const steps = [
     title: "Strategy",
     description:
       "We build a custom growth roadmap tailored to your brand, audience, and revenue targets.",
-    color: "#8b5cf6",
+    color: "#e4cc17",
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const steps = [
     title: "Launch",
     description:
       "Your dedicated team is assembled and onboarded. We go live within 48 hours of signing.",
-    color: "#a855f7",
+    color: "#d4af37",
   },
   {
     number: "05",
@@ -43,7 +43,7 @@ const steps = [
     title: "Scale",
     description:
       "Watch your revenue climb month over month as our systems compound your growth continuously.",
-    color: "#f472b6",
+    color: "#e8a598",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function HowItWorks() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(77, 159, 255, 0.05) 0%, transparent 70%)",
+            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(212, 175, 55, 0.04) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -80,7 +80,7 @@ export default function HowItWorks() {
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white mb-5"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             From application to{" "}
             <span className="gradient-text">full scale</span>
@@ -102,7 +102,7 @@ export default function HowItWorks() {
               animate={inView ? { scaleX: 1 } : {}}
               transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
               className="absolute top-10 left-[10%] right-[10%] h-px origin-left"
-              style={{ background: "linear-gradient(90deg, #4d9fff, #8b5cf6, #f472b6)" }}
+              style={{ background: "linear-gradient(90deg, #e8a598, #d4af37, #e4cc17)" }}
               aria-hidden="true"
             />
           </div>
@@ -139,7 +139,7 @@ export default function HowItWorks() {
 
                   <h3
                     className="text-white font-bold text-lg mb-3"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     {step.title}
                   </h3>
@@ -189,7 +189,7 @@ export default function HowItWorks() {
                   </div>
                   <h3
                     className="text-white font-semibold text-base mb-2"
-                    style={{ fontFamily: "var(--font-space-grotesk)" }}
+                    style={{ fontFamily: "var(--font-display)" }}
                   >
                     {step.title}
                   </h3>

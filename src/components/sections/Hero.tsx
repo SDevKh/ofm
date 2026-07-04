@@ -29,9 +29,9 @@ function ParticleCanvas() {
 
     const COLORS = [
       "rgba(255, 255, 255,",      // Bright White
-      "rgba(123, 184, 255,",      // Electric Blue
-      "rgba(167, 139, 250,",      // Vivid Purple
-      "rgba(244, 143, 177,",      // Bright Pink
+      "rgba(244, 219, 143,",      // Soft Yellow Gold
+      "rgba(232, 165, 152,",      // Rose Gold
+      "rgba(212, 175, 55,",       // Gold / Amber
     ];
 
     let meteor = {
@@ -98,7 +98,7 @@ function ParticleCanvas() {
             ctx.moveTo(particles[i].x, particles[i].y);
             ctx.lineTo(particles[j].x, particles[j].y);
             const lineOpacity = 0.09 * (1 - dist / 110) * ((particles[i].baseOpacity + particles[j].baseOpacity) / 2);
-            ctx.strokeStyle = `rgba(123, 184, 255, ${lineOpacity})`;
+            ctx.strokeStyle = `rgba(232, 165, 152, ${lineOpacity})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -162,8 +162,8 @@ function ParticleCanvas() {
             meteor.y - meteor.dy * (meteor.length / meteor.speed)
           );
           gradient.addColorStop(0, `rgba(255, 255, 255, ${meteor.opacity})`);
-          gradient.addColorStop(0.3, `rgba(123, 184, 255, ${meteor.opacity * 0.7})`);
-          gradient.addColorStop(1, "rgba(77, 159, 255, 0)");
+          gradient.addColorStop(0.3, `rgba(232, 165, 152, ${meteor.opacity * 0.7})`);
+          gradient.addColorStop(1, "rgba(212, 175, 55, 0)");
 
           ctx.beginPath();
           ctx.moveTo(meteor.x, meteor.y);
@@ -257,7 +257,7 @@ export default function Hero() {
       <div
         className="absolute top-[10%] left-[15%] w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(77, 159, 255, 0.12) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%)",
           filter: "blur(60px)",
           animation: "float 8s ease-in-out infinite",
         }}
@@ -266,7 +266,7 @@ export default function Hero() {
       <div
         className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(232, 165, 152, 0.08) 0%, transparent 70%)",
           filter: "blur(80px)",
           animation: "float 10s ease-in-out infinite reverse",
         }}
@@ -275,7 +275,7 @@ export default function Hero() {
       <div
         className="absolute top-[40%] right-[30%] w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(244, 114, 182, 0.07) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(228, 204, 23, 0.04) 0%, transparent 70%)",
           filter: "blur(60px)",
           animation: "float 12s ease-in-out infinite 2s",
         }}
@@ -295,14 +295,14 @@ export default function Hero() {
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
               style={{
-                background: "rgba(77, 159, 255, 0.1)",
-                border: "1px solid rgba(77, 159, 255, 0.25)",
-                color: "#7bb8ff",
+                background: "rgba(212, 175, 55, 0.08)",
+                border: "1px solid rgba(212, 175, 55, 0.22)",
+                color: "#e8a598",
               }}
             >
-              <Star size={13} fill="#7bb8ff" />
+              <Star size={13} fill="#e163ff" className="text-[#d4af37]" />
               <span>Trusted by 200+ creators worldwide</span>
-              <Star size={13} fill="#7bb8ff" />
+              <Star size={13} fill="#ff00db" className="text-[#ff00db]" />
             </div>
           </motion.div>
 
@@ -311,9 +311,9 @@ export default function Hero() {
             variants={itemVariants}
             className="font-bold leading-[1.05] mb-7"
             style={{
-              fontFamily: "var(--font-space-grotesk)",
+              fontFamily: "var(--font-display)",
               fontSize: "clamp(2.8rem, 7vw, 6rem)",
-              letterSpacing: "-0.03em",
+              letterSpacing: "-0.02em",
               color: "#ffffff",
             }}
           >
@@ -371,7 +371,7 @@ export default function Hero() {
               <div key={stat.label} className="text-center">
                 <div
                   className="text-2xl font-bold gradient-text"
-                  style={{ fontFamily: "var(--font-space-grotesk)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {stat.value}
                 </div>
@@ -388,7 +388,7 @@ export default function Hero() {
       <div
         className="absolute bottom-0 left-0 right-0 h-32 pointer-events-none"
         style={{
-          background: "linear-gradient(to bottom, transparent, #080808)",
+          background: "linear-gradient(to bottom, transparent, #0e0712)",
         }}
         aria-hidden="true"
       />

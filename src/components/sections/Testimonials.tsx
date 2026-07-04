@@ -9,18 +9,18 @@ const testimonials = [
     name: "Sophie M.",
     niche: "Fitness Creator",
     avatar: "SM",
-    avatarColor: "#4d9fff",
+    avatarColor: "#d4af37",
     rating: 5,
     revenue: "$22,000/mo",
     quote:
-      "EliteCreator completely transformed my business. Before, I was stuck at $3K/month and burnout. Now I earn $22K and barely spend time on admin. Their team is world-class.",
+      "apsaraCreator completely transformed my business. Before, I was stuck at $3K/month and burnout. Now I earn $22K and barely spend time on admin. Their team is world-class.",
     growth: "+633%",
   },
   {
     name: "Aria K.",
     niche: "Fashion & Beauty",
     avatar: "AK",
-    avatarColor: "#8b5cf6",
+    avatarColor: "#e8a598",
     rating: 5,
     revenue: "$41,000/mo",
     quote:
@@ -31,7 +31,7 @@ const testimonials = [
     name: "Luna V.",
     niche: "Lifestyle Creator",
     avatar: "LV",
-    avatarColor: "#f472b6",
+    avatarColor: "#e4cc17",
     rating: 5,
     revenue: "$15,500/mo",
     quote:
@@ -42,7 +42,7 @@ const testimonials = [
     name: "Mia R.",
     niche: "Art & Entertainment",
     avatar: "MR",
-    avatarColor: "#4d9fff",
+    avatarColor: "#d4af37",
     rating: 5,
     revenue: "$8,900/mo",
     quote:
@@ -53,7 +53,7 @@ const testimonials = [
     name: "Zara N.",
     niche: "Gaming Creator",
     avatar: "ZN",
-    avatarColor: "#8b5cf6",
+    avatarColor: "#e8a598",
     rating: 5,
     revenue: "$28,000/mo",
     quote:
@@ -119,7 +119,7 @@ export default function Testimonials() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 80%, rgba(139, 92, 246, 0.05) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -137,7 +137,7 @@ export default function Testimonials() {
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Hear it from our{" "}
             <span className="gradient-text">creators</span>
@@ -156,12 +156,12 @@ export default function Testimonials() {
           <div
             className="relative rounded-3xl p-1 overflow-hidden"
             style={{
-              background: "linear-gradient(135deg, rgba(77,159,255,0.2), rgba(139,92,246,0.15), rgba(244,114,182,0.1))",
+              background: "linear-gradient(135deg, rgba(232,165,152,0.25), rgba(212,175,55,0.15), rgba(228,204,23,0.1))",
             }}
           >
             <div
               className="rounded-3xl overflow-hidden"
-              style={{ background: "rgba(10, 10, 16, 0.95)", minHeight: "280px" }}
+              style={{ background: "rgba(18, 8, 16, 0.95)", minHeight: "280px" }}
             >
               <AnimatePresence mode="wait" custom={direction}>
                 <motion.div
@@ -204,7 +204,7 @@ export default function Testimonials() {
                         {t.avatar}
                       </div>
                       <div>
-                        <div className="text-white font-semibold text-base" style={{ fontFamily: "var(--font-space-grotesk)" }}>
+                        <div className="text-white font-semibold text-base" style={{ fontFamily: "var(--font-display)" }}>
                           {t.name}
                         </div>
                         <div className="text-white/40 text-sm">{t.niche}</div>
@@ -221,10 +221,10 @@ export default function Testimonials() {
                       }}
                     >
                       <div className="text-xs text-white/40 mb-0.5">Monthly Revenue</div>
-                      <div className="font-bold text-lg" style={{ color: t.avatarColor, fontFamily: "var(--font-space-grotesk)" }}>
+                      <div className="font-bold text-lg" style={{ color: t.avatarColor, fontFamily: "var(--font-display)" }}>
                         {t.revenue}
                       </div>
-                      <div className="text-xs font-semibold" style={{ color: "#4dff8c" }}>
+                      <div className="text-xs font-semibold" style={{ color: "#34d399" }}>
                         {t.growth} growth
                       </div>
                     </div>
@@ -257,7 +257,7 @@ export default function Testimonials() {
                     width: i === current ? "24px" : "6px",
                     height: "6px",
                     background: i === current
-                      ? "linear-gradient(90deg, #4d9fff, #8b5cf6)"
+                      ? "linear-gradient(90deg, #e8a598, #d4af37)"
                       : "rgba(255,255,255,0.2)",
                   }}
                 />

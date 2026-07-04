@@ -37,7 +37,7 @@ export default function CursorGlow() {
         className="w-[400px] h-[400px] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(77, 159, 255, 0.06) 0%, rgba(139, 92, 246, 0.04) 40%, transparent 70%)",
+            "radial-gradient(circle, rgba(212, 175, 55, 0.18) 0%, rgba(232, 165, 152, 0.03) 40%, transparent 70%)",
         }}
       />
     </motion.div>

@@ -21,70 +21,70 @@ const services = [
     title: "Account Management",
     description:
       "A dedicated account manager handles your daily operations, keeping everything optimized and revenue-generating 24/7.",
-    color: "#4d9fff",
+    color: "#d4af37",
   },
   {
     icon: MessageSquareHeart,
     title: "Fan Messaging",
     description:
       "Professional chatters engage your fanbase with personalized messaging strategies that maximize conversions and retention.",
-    color: "#8b5cf6",
+    color: "#e8a598",
   },
   {
     icon: TrendingUp,
     title: "Revenue Optimization",
     description:
       "Data-driven pricing, PPV strategy, and upsell frameworks that consistently push your earnings to new heights.",
-    color: "#f472b6",
+    color: "#e4cc17",
   },
   {
     icon: Lightbulb,
     title: "Content Strategy",
     description:
       "Custom content calendars and creative direction tailored to your brand, audience, and growth goals.",
-    color: "#4d9fff",
+    color: "#d4af37",
   },
   {
     icon: Share2,
     title: "Social Media Growth",
     description:
       "Cross-platform growth strategies on Reddit, Twitter/X, TikTok, and Instagram to drive consistent traffic.",
-    color: "#8b5cf6",
+    color: "#e8a598",
   },
   {
     icon: Megaphone,
     title: "Marketing",
     description:
       "Paid and organic marketing campaigns designed by specialists who understand the creator economy deeply.",
-    color: "#f472b6",
+    color: "#e4cc17",
   },
   {
     icon: BarChart3,
     title: "Analytics & Reporting",
     description:
       "Weekly performance reports with actionable insights, revenue breakdowns, and growth tracking dashboards.",
-    color: "#4d9fff",
+    color: "#d4af37",
   },
   {
     icon: ShieldCheck,
     title: "DMCA & Privacy",
     description:
       "Full content protection service — active monitoring, DMCA takedowns, and privacy safeguarding done for you.",
-    color: "#8b5cf6",
+    color: "#e8a598",
   },
   {
     icon: Sparkles,
     title: "Brand Strategy",
     description:
       "Build a sustainable, memorable personal brand that commands premium pricing and long-term audience loyalty.",
-    color: "#f472b6",
+    color: "#e4cc17",
   },
   {
     icon: Rocket,
     title: "Scaling Systems",
     description:
-      "Proven systems and automation frameworks to scale beyond income plateaus into elite creator territory.",
-    color: "#4d9fff",
+      "Proven systems and automation frameworks to scale beyond income plateaus into apsara creator territory.",
+    color: "#d4af37",
   },
 ];
 
@@ -103,7 +103,7 @@ export default function Services() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(139, 92, 246, 0.05) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(212, 175, 55, 0.04) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -121,7 +121,7 @@ export default function Services() {
           </p>
           <h2
             className="text-3xl sm:text-5xl font-bold text-white mb-5"
-            style={{ fontFamily: "var(--font-space-grotesk)", letterSpacing: "-0.03em" }}
+            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Everything your creator business{" "}
             <span className="gradient-text">needs to scale</span>
@@ -172,7 +172,7 @@ export default function Services() {
                 {/* Text */}
                 <h3
                   className="text-white font-semibold text-base mb-2"
-                  style={{ fontFamily: "var(--font-space-grotesk)" }}
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   {service.title}
                 </h3>

@@ -23,16 +23,16 @@ function InstagramIcon({ size = 15 }: { size?: number }) {
 
 const footerLinks = {
   Company: [
-    { label: "About Us", href: "#" },
-    { label: "Services", href: "#services" },
-    { label: "Results", href: "#results" },
-    { label: "Process", href: "#process" },
+    { label: "About Us", href: "/" },
+    { label: "Services", href: "/services" },
+    { label: "Results", href: "/results" },
+    { label: "Process", href: "/process" },
   ],
   Support: [
-    { label: "FAQ", href: "#faq" },
-    { label: "Contact", href: "#contact" },
-    { label: "Apply Now", href: "#contact" },
-    { label: "Book a Call", href: "#contact" },
+    { label: "FAQ", href: "/faq" },
+    { label: "Contact", href: "/apply" },
+    { label: "Apply Now", href: "/apply" },
+    { label: "Book a Call", href: "/apply" },
   ],
   Legal: [
     { label: "Privacy Policy", href: "#" },
@@ -45,17 +45,17 @@ const footerLinks = {
 const socials = [
   { icon: TwitterIcon, href: "#", label: "Twitter" },
   { icon: InstagramIcon, href: "#", label: "Instagram" },
-  { icon: Mail, href: "mailto:hello@elitecreator.agency", label: "Email" },
+  { icon: Mail, href: "mailto:hello@apsaracreator.agency", label: "Email" },
 ];
 
 export default function Footer() {
   return (
-    <footer className="relative border-t border-white/5 overflow-hidden" aria-label="Site footer">
+    <footer className="relative border-t border-[rgba(232,165,152,0.08)] overflow-hidden" aria-label="Site footer">
       {/* Background glow */}
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-10 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at center, #4d9fff 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, #d4af37 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -65,15 +65,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#" className="flex items-center gap-2 mb-5">
-              <div
-                className="w-9 h-9 rounded-xl flex items-center justify-center"
-                style={{ background: "linear-gradient(135deg, #4d9fff, #8b5cf6)" }}
-              >
-                <Zap size={18} className="text-white" fill="white" />
-              </div>
-              <span className="text-white font-bold text-xl tracking-tight">
-                Elite<span className="gradient-text">Creator</span>
-              </span>
+              <img src="/assets/logo.png" className="h-8 w-auto object-contain brightness-0 invert" alt="apsaraCreator Logo" />
             </a>
             <p className="text-white/50 text-sm leading-relaxed max-w-xs mb-6">
               The world&apos;s most trusted international OnlyFans management agency.
@@ -86,14 +78,14 @@ export default function Footer() {
                   href={href}
                   aria-label={label}
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-white/50 hover:text-white transition-all duration-200"
-                  style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}
+                  style={{ background: "rgba(24, 13, 32, 0.45)", border: "1px solid rgba(232, 165, 152, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(77, 159, 255, 0.4)";
-                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(77, 159, 255, 0.1)";
+                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(212, 175, 55, 0.4)";
+                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(212, 175, 55, 0.1)";
                   }}
                   onMouseLeave={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(255,255,255,0.08)";
-                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(255,255,255,0.05)";
+                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(232, 165, 152, 0.08)";
+                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(24, 13, 32, 0.45)";
                   }}
                 >
                   <Icon size={15} className="flex-shrink-0" />
@@ -125,13 +117,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="py-6 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="py-6 border-t border-[rgba(232,165,152,0.08)] flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-white/30 text-sm">
-            © {new Date().getFullYear()} EliteCreator Agency. All rights reserved.
+            © {new Date().getFullYear()} APSARA Agency. All rights reserved.
           </p>
           <div className="flex items-center gap-1 text-sm text-white/30">
-            <a href="mailto:hello@elitecreator.agency" className="hover:text-electric-blue transition-colors flex items-center gap-1">
-              hello@elitecreator.agency
+            <a href="mailto:hello@apsaracreator.agency" className="hover:text-gold transition-colors flex items-center gap-1">
+              hello@apsaracreator.agency
               <ArrowUpRight size={12} />
             </a>
           </div>

@@ -5,6 +5,7 @@ import Footer from "@/components/layout/Footer";
 import ScrollProgress from "@/components/ui/ScrollProgress";
 import CursorGlow from "@/components/ui/CursorGlow";
 import CaseStudies from "@/components/sections/CaseStudies";
+import LiveProof from "@/components/sections/LiveProof";
 
 export default function ResultsPage() {
   return (
@@ -26,6 +27,7 @@ export default function ResultsPage() {
           </h1>
         </div>
         <CaseStudies />
+        <LiveProof />
       </main>
 
       <Footer />

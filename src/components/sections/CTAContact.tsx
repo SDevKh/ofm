@@ -92,7 +92,7 @@ export default function CTAContact() {
               style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
             >
               Ready to Scale Your{" "}
-              <span className="gradient-text block sm:inline">
+              <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">
                 Creator Business?
               </span>
             </h2>
@@ -148,7 +148,7 @@ export default function CTAContact() {
                 style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
               >
                 Start your{" "}
-                <span className="gradient-text">application</span>
+                <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">application</span>
               </h2>
               <p className="text-white/50 leading-relaxed mb-8">
                 Fill out the form and our team will get back to you within 24 hours

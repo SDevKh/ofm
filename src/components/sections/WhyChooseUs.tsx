@@ -66,7 +66,7 @@ export default function WhyChooseUs() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             The difference is{" "}
-            <span className="gradient-text">night and day</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">night and day</span>
           </h2>
         </motion.div>
 

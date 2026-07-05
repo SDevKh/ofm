@@ -28,8 +28,8 @@ export default function Navbar() {
     <ResizableNavbar>
       {/* Desktop view */}
       <NavBody>
-        <a href="#" className="flex items-center gap-2 relative z-20">
-          <img src="/assets/logo.png" className="h-8 w-auto object-contain brightness-0 invert" alt="apsaraCreator Logo" />
+        <a href="/" className="flex items-center gap-2 relative z-20">
+          <img src="/assets/logo.png" className="w-[7vw] object-contain brightness-0 invert" alt="apsaraCreator Logo" />
         </a>
 
         <NavItems items={navItems} />

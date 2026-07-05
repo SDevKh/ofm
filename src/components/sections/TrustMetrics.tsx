@@ -49,7 +49,7 @@ function AnimatedCounter({ end, suffix, prefix = "", delay }: { end: number; suf
 
 const stats: StatProps[] = [
   {
-    end: 50,
+    end: 5,
     suffix: "M+",
     prefix: "$",
     label: "Creator Revenue Managed",
@@ -58,7 +58,7 @@ const stats: StatProps[] = [
     delay: 0,
   },
   {
-    end: 200,
+    end: 40,
     suffix: "+",
     label: "Creators Managed",
     sublabel: "Active creators in our portfolio",
@@ -82,7 +82,7 @@ const stats: StatProps[] = [
     delay: 0.3,
   },
   {
-    end: 30,
+    end: 8,
     suffix: "+",
     label: "Countries Served",
     sublabel: "Truly global creator management",
@@ -125,12 +125,13 @@ export default function TrustMetrics() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
           >
             Results that speak{" "}
-            <span className="gradient-text">for themselves</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">for themselves</span>
           </h2>
         </motion.div>
 
+
         {/* Stats grid */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="content sm:grid-cols-3">
           {stats.map((stat, i) => {
             const Icon = stat.icon;
             return (
@@ -139,18 +140,13 @@ export default function TrustMetrics() {
                 initial={{ opacity: 0, y: 30 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: i * 0.08, ease: [0.22, 1, 0.36, 1] }}
-                className="glass glass-hover rounded-2xl p-4 sm:p-6 text-center group"
-                style={{ borderRadius: "20px" }}
+                className=""
+                style={{ lineHeight: 0.9 }}
               >
+
                 <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center mx-auto mb-4"
-                  style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
-                >
-                  <Icon size={18} style={{ color: "var(--color-rose-gold)" }} />
-                </div>
-                <div
-                  className="text-3xl sm:text-4xl font-bold gradient-text mb-2"
-                  style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.01em" }}
+                  className="text-[5vw] sm:text-[5vw] font-bold font-syne gradient-text mb-2"
+                  style={{ fontFamily: "var(--font-display)" }}
                 >
                   <AnimatedCounter
                     end={stat.end}
@@ -159,8 +155,8 @@ export default function TrustMetrics() {
                     delay={stat.delay}
                   />
                 </div>
-                <div className="text-white/80 font-semibold text-sm mb-1">{stat.label}</div>
-                <div className="text-white/35 text-xs leading-relaxed">{stat.sublabel}</div>
+                <div className="text-white/80 font-bold text-[8vw] mb-1 font-syne">{stat.label}</div>
+                <div className="text-white/35 text-[3vw] leading-relaxed w-[100%] border-b border-gray-100  mb-5 font-syne">{stat.sublabel}</div>
               </motion.div>
             );
           })}

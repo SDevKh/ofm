@@ -140,7 +140,7 @@ export default function Testimonials() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Hear it from our{" "}
-            <span className="gradient-text">creators</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">creators</span>
           </h2>
         </motion.div>
 

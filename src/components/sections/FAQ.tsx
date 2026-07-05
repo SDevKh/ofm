@@ -145,7 +145,7 @@ export default function FAQ() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Everything you need{" "}
-            <span className="gradient-text">to know</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveatt">to know</span>
           </h2>
           <p className="text-white/50 text-lg max-w-lg mx-auto">
             Have more questions? Reach out at{" "}

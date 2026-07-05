@@ -175,7 +175,7 @@ export default function ParallaxShowcase() {
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {slide.title.split(" ").map((word, i) => (
-                      <span key={i} className={i % 2 === 1 ? "gradient-text" : ""}>
+                      <span key={i} className={i % 2 === 1 ? "gradient-text text-[20vw] sm:text-[5vw] font-caveat" : ""}>
                         {word}{" "}
                       </span>
                     ))}
@@ -186,7 +186,7 @@ export default function ParallaxShowcase() {
                   </p>
 
                   <div className="flex flex-wrap items-center gap-4 mt-2">
-                    <NavbarButton href="#contact" variant="gradient" className="flex items-center gap-2 group">
+                    <NavbarButton href="#contact" variant="gradient" className="flex items-center gap-2 group color-white">
                       Get Started
                       <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                     </NavbarButton>

@@ -151,7 +151,7 @@ export default function CaseStudies() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             Creator success{" "}
-            <span className="gradient-text">stories</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">stories</span>
           </h2>
           <p className="text-white/50 text-lg max-w-xl mx-auto">
             Real numbers from real creators who trusted us with their business.

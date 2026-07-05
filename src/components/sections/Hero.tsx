@@ -281,7 +281,19 @@ export default function Hero() {
         }}
         aria-hidden="true"
       />
-
+      <div
+        className="absolute inset-0 opacity-30 pointer-events-none overflow-hidden"
+        style={{
+          maskImage: "radial-gradient(circle, black 60%, transparent 90%)",
+          WebkitMaskImage: "radial-gradient(circle, black 30%, transparent 90%)",
+        }}
+      >
+        <img
+          className="w-full h-full object-cover blur-[1px]"
+          src="./assets/ofm.jpg"
+          alt=""
+        />
+      </div>
       {/* Content */}
       <div className="container-wide relative z-10 py-20 sm:py-32 flex-1 flex items-center">
         <motion.div
@@ -295,9 +307,7 @@ export default function Hero() {
             <div
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-medium"
               style={{
-                background: "rgba(212, 175, 55, 0.08)",
-                border: "1px solid rgba(212, 175, 55, 0.22)",
-                color: "#e8a598",
+                color: "#ff01eeff",
               }}
             >
               <Star size={13} fill="#e163ff" className="text-[#d4af37]" />
@@ -311,14 +321,14 @@ export default function Hero() {
             variants={itemVariants}
             className="font-bold leading-[1.05] mb-7"
             style={{
-              fontFamily: "var(--font-display)",
+              fontFamily: "dmMono",
               fontSize: "clamp(2.8rem, 7vw, 6rem)",
               letterSpacing: "-0.02em",
               color: "#ffffff",
             }}
           >
             Scale Your Creator Business{" "}
-            <span className="gradient-text block sm:inline">
+            <span className="gradient-text block sm:inline font-caveat">
               Without Managing It Yourself.
             </span>
           </motion.h1>
@@ -364,8 +374,8 @@ export default function Hero() {
             className="mt-16 flex flex-wrap items-center justify-center gap-8"
           >
             {[
-              { label: "Creator Revenue", value: "$50M+" },
-              { label: "Active Creators", value: "200+" },
+              { label: "Creator Revenue", value: "$5M+" },
+              { label: "Active Creators", value: "40+" },
               { label: "Avg Revenue Lift", value: "340%" },
             ].map((stat) => (
               <div key={stat.label} className="text-center">

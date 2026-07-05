@@ -103,7 +103,7 @@ export const NavBody = ({ children, className, visible }: NavBodyProps) => {
       }}
       className={cn(
         "relative z-[60] mx-auto hidden w-full max-w-7xl flex-row items-center justify-between self-start rounded-full bg-transparent px-6 py-3 lg:flex transition-all duration-300",
-        visible ? "bg-glass-bg border border-glass-border" : "border border-transparent",
+        visible ? "bg-glass-bg " : "border border-transparent",
         className,
       )}
     >
@@ -266,15 +266,15 @@ export const NavbarButton = ({
     | React.ComponentPropsWithoutRef<"button">
   )) => {
   const baseStyles =
-    "px-4 py-2 rounded-full text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 transition duration-200 inline-block text-center";
+    "px-4 py-2 rounded-full text-sm font-bold relative cursor-pointer hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0 transition duration-200 inline-block text-center w-[8vw]";
 
   const variantStyles = {
     primary:
-      "bg-[#e163ff] text-plum-black hover:bg-gold-light shadow-[0px_1px_0px_0px_rgba(255,255,255,0.4)_inset]",
-    secondary: "bg-transparent text-white border border-white/20 hover:border-white/40",
-    dark: "bg-neutral-950 text-white hover:bg-neutral-900 border border-white/10",
+      "bg-[#e163ff] text-white hover:bg-gold-light shadow-[0px_1px_0px_0px_rgba(255,255,255,0.4)_inset]",
+    secondary: "bg-transparent text-white  hover:border-white/40",
+    dark: "bg-neutral-950 text-white hover:bg-neutral-900 ",
     gradient:
-      "bg-gradient-to-r from-[#e163ff] to-[#ff00db] text-plum-black hover:opacity-90 shadow-[0px_1px_0px_0px_rgba(255,255,255,0.4)_inset]",
+      "bg-gradient-to-r from-[#e163ff] to-[#ff00db] text-white hover:opacity-90 shadow-[0px_1px_0px_0px_rgba(255,255,255,0.4)_inset]",
   };
 
   return (

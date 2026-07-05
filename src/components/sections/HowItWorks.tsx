@@ -83,7 +83,7 @@ export default function HowItWorks() {
             style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
           >
             From application to{" "}
-            <span className="gradient-text">full scale</span>
+            <span className="gradient-text text-[20vw] sm:text-[5vw] font-caveat">full scale</span>
             <br />in 5 steps
           </h2>
         </motion.div>

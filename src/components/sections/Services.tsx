@@ -120,11 +120,10 @@ export default function Services() {
             What We Do
           </p>
           <h2
-            className="text-3xl sm:text-5xl font-bold text-white mb-5"
-            style={{ fontFamily: "var(--font-display)", letterSpacing: "-0.02em" }}
+            className="text-3xl sm:text-3xl font-bold text-white mb-5 font-dmSans"
           >
             Everything your creator business{" "}
-            <span className="gradient-text">needs to scale</span>
+            <span className="gradient-text text-[20vw] sm:text-[8vw] font-caveat">needs to scale</span>
           </h2>
           <p className="text-white/50 text-lg max-w-xl mx-auto">
             A full-stack management suite covering every dimension of creator growth — so you never have to juggle operations again.

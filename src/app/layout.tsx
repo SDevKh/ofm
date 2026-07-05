@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans, DM_Mono, Geist } from "next/font/google";
+import { Playfair_Display, DM_Sans, DM_Mono, Geist, Syne, Caveat } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarLogo, NavbarButton } from "@/components/ui/resizable-navbar";
@@ -29,6 +29,20 @@ const dmMono = DM_Mono({
   subsets: ["latin"],
   weight: ["400", "500"],
   variable: "--font-dm-mono",
+  display: "swap",
+});
+
+const syne = Syne({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-syne",
+  display: "swap",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-caveat",
   display: "swap",
 });
 
@@ -113,7 +127,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(playfair.variable, dmSans.variable, dmMono.variable, "font-sans", geist.variable)}
+      className={cn(playfair.variable, dmSans.variable, dmMono.variable, syne.variable, caveat.variable, "font-sans", geist.variable)}
     >
       <head>
         <script

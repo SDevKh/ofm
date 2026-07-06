@@ -12,9 +12,6 @@ const usFeatures = [
   "Transparent Communication",
   "Long-Term Growth Focus",
   "Custom Strategy Per Creator",
-  "24/7 Live Support",
-  "Content Protection (DMCA)",
-  "Vetted & Trained Chatters",
 ];
 
 const themFeatures = [
@@ -25,9 +22,6 @@ const themFeatures = [
   "Slow or No Communication",
   "Short-Term Thinking",
   "Cookie-Cutter Approach",
-  "Limited Support Hours",
-  "No DMCA Protection",
-  "Untrained Contractors",
 ];
 
 export default function WhyChooseUs() {
@@ -71,7 +65,7 @@ export default function WhyChooseUs() {
         </motion.div>
 
         {/* Comparison */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-15 mx-auto p-[7vw]">
           {/* Us Card */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -93,28 +87,24 @@ export default function WhyChooseUs() {
               style={{
                 background: "rgba(26, 12, 20, 0.45)",
                 border: "1px solid rgba(232, 165, 152, 0.1)",
-                boxShadow: "0 0 40px rgba(212, 175, 55, 0.06), inset 0 1px 0 rgba(232, 165, 152, 0.05)",
+                boxShadow: "0 0 40px rgba(178, 55, 212, 0.06), inset 0 1px 0 rgba(232, 165, 152, 0.05)",
               }}
             >
               {/* Header */}
               <div className="flex items-center gap-3 mb-8">
-                <div
-                  className="w-10 h-10 rounded-xl flex items-center justify-center"
-                  style={{ background: "linear-gradient(135deg, #e898e5ff, #d437d4ff)" }}
-                >
-                  <Zap size={18} className="text-[#0e0712]" fill="#0e0712" />
-                </div>
+
                 <div>
                   <div
-                    className="text-white font-bold text-lg"
-                    style={{ fontFamily: "var(--font-display)" }}
+                    className="text-white font-bold text-4xl ml-[vw]"
+                    style={{ fontFamily: "caveat" }}
                   >
-                    ApsaraCreator Agency
+                    Apsara Agency
                   </div>
+
                   <div className="text-xs text-white/40">Premium Management</div>
                 </div>
               </div>
-
+              <img className="absolute opacity-40%" style={{ opacity: 0.5 }} src=".\assets\logo.png"></img>
               <ul className="space-y-3.5">
                 {usFeatures.map((feature, i) => (
                   <motion.li
@@ -130,7 +120,7 @@ export default function WhyChooseUs() {
                     >
                       <Check size={11} style={{ color: "#d4af37" }} strokeWidth={3} />
                     </div>
-                    <span className="text-white/85 text-sm font-medium">{feature}</span>
+                    <span className="text-white/85 text-[1.5rem] font-playfair">{feature}</span>
                   </motion.li>
                 ))}
               </ul>
@@ -183,13 +173,13 @@ export default function WhyChooseUs() {
                   >
                     <X size={11} style={{ color: "#ff5050" }} strokeWidth={3} />
                   </div>
-                  <span className="text-white/35 text-sm">{feature}</span>
+                  <span className="text-white/35 text-[1.5rem] font-playfair">{feature}</span>
                 </motion.li>
               ))}
             </ul>
           </motion.div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   );
 }

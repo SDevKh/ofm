@@ -55,7 +55,7 @@ export default function Footer() {
       <div
         className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] opacity-10 pointer-events-none"
         style={{
-          background: "radial-gradient(ellipse at center, #d4af37 0%, transparent 70%)",
+          background: "radial-gradient(ellipse at center, #d437b5ff 0%, transparent 70%)",
           filter: "blur(60px)",
         }}
       />
@@ -80,8 +80,8 @@ export default function Footer() {
                   className="w-9 h-9 rounded-lg flex items-center justify-center text-white/50 hover:text-white transition-all duration-200"
                   style={{ background: "rgba(24, 13, 32, 0.45)", border: "1px solid rgba(232, 165, 152, 0.08)", display: "flex", alignItems: "center", justifyContent: "center" }}
                   onMouseEnter={(e) => {
-                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(212, 175, 55, 0.4)";
-                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(212, 175, 55, 0.1)";
+                    (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(212, 55, 209, 0.4)";
+                    (e.currentTarget as HTMLAnchorElement).style.background = "rgba(212, 55, 204, 0.1)";
                   }}
                   onMouseLeave={(e) => {
                     (e.currentTarget as HTMLAnchorElement).style.borderColor = "rgba(232, 165, 152, 0.08)";

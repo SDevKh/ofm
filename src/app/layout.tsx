@@ -4,7 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarLogo, NavbarButton } from "@/components/ui/resizable-navbar";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 const navItems = [
   { name: "Features", link: "/features" },
   { name: "Pricing", link: "/pricing" },
@@ -47,7 +47,7 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "apsaraCreator Agency — Premium OnlyFans Management",
+  title: "APSARA Agency — Premium OnlyFans Management",
   description:
     "Scale your creator business without managing it yourself. apsaraCreator handles strategy, fan messaging, marketing, growth, and operations so you can focus on creating.",
   keywords: [

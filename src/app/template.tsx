@@ -28,20 +28,20 @@ export default function Template({ children }: { children: React.ReactNode }) {
       >
         <motion.path
           fill="#0e0712"
-          stroke="#d4af37"
+          stroke="#d437a0ff"
           strokeWidth="0.5"
           initial={{ d: "M 0 100 V 100 Q 50 100 100 100 V 100 Z" }}
           animate={
             animating
               ? {
-                  d: [
-                    "M 0 100 V 100 Q 50 100 100 100 V 100 Z", // Flat at bottom
-                    "M 0 100 V 45 Q 50 0 100 45 V 100 Z",     // Morph curve rising up
-                    "M 0 100 V 0 Q 50 0 100 0 V 100 Z",       // Cover whole screen
-                    "M 0 0 V 45 Q 50 100 100 45 V 0 Z",       // Morph curve moving out top
-                    "M 0 0 V 0 Q 50 0 100 0 V 0 Z",           // Flat at top (exited)
-                  ],
-                }
+                d: [
+                  "M 0 100 V 100 Q 50 100 100 100 V 100 Z", // Flat at bottom
+                  "M 0 100 V 45 Q 50 0 100 45 V 100 Z",     // Morph curve rising up
+                  "M 0 100 V 0 Q 50 0 100 0 V 100 Z",       // Cover whole screen
+                  "M 0 0 V 45 Q 50 100 100 45 V 0 Z",       // Morph curve moving out top
+                  "M 0 0 V 0 Q 50 0 100 0 V 0 Z",           // Flat at top (exited)
+                ],
+              }
               : { d: "M 0 0 V 0 Q 50 0 100 0 V 0 Z" }
           }
           transition={{
@@ -59,10 +59,10 @@ export default function Template({ children }: { children: React.ReactNode }) {
         animate={
           animating
             ? {
-                opacity: [0, 0, 1],
-                y: [20, 20, 0],
-                scale: [0.97, 0.97, 1],
-              }
+              opacity: [0, 0, 1],
+              y: [20, 20, 0],
+              scale: [0.97, 0.97, 1],
+            }
             : { opacity: 1, y: 0, scale: 1 }
         }
         transition={{

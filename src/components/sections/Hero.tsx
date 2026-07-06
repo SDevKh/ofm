@@ -29,9 +29,9 @@ function ParticleCanvas() {
 
     const COLORS = [
       "rgba(255, 255, 255,",      // Bright White
-      "rgba(244, 219, 143,",      // Soft Yellow Gold
-      "rgba(232, 165, 152,",      // Rose Gold
-      "rgba(212, 175, 55,",       // Gold / Amber
+      "rgba(rgb(249 11 255",      // Soft Yellow Gold
+      "rgba(250 71 255,",      // Rose Gold
+      "rgba(252, 153, 255,",       // Gold / Amber
     ];
 
     let meteor = {
@@ -257,7 +257,7 @@ export default function Hero() {
       <div
         className="absolute top-[10%] left-[15%] w-[500px] h-[500px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(212, 55, 175, 0.08) 0%, transparent 70%)",
           filter: "blur(60px)",
           animation: "float 8s ease-in-out infinite",
         }}
@@ -266,7 +266,7 @@ export default function Hero() {
       <div
         className="absolute bottom-[10%] right-[10%] w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(232, 165, 152, 0.08) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(191, 152, 232, 0.08) 0%, transparent 70%)",
           filter: "blur(80px)",
           animation: "float 10s ease-in-out infinite reverse",
         }}
@@ -275,7 +275,7 @@ export default function Hero() {
       <div
         className="absolute top-[40%] right-[30%] w-[300px] h-[300px] rounded-full pointer-events-none"
         style={{
-          background: "radial-gradient(circle, rgba(228, 204, 23, 0.04) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(228, 23, 211, 0.04) 0%, transparent 70%)",
           filter: "blur(60px)",
           animation: "float 12s ease-in-out infinite 2s",
         }}

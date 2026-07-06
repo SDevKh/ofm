@@ -7,9 +7,9 @@ import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sophie M.",
-    niche: "Fitness Creator",
+    niche: "Only Fans",
     avatar: "SM",
-    avatarColor: "#d4af37",
+    avatarColor: "#af37d4ff",
     rating: 5,
     revenue: "$22,000/mo",
     quote:
@@ -18,9 +18,9 @@ const testimonials = [
   },
   {
     name: "Aria K.",
-    niche: "Fashion & Beauty",
+    niche: "Instagram",
     avatar: "AK",
-    avatarColor: "#e8a598",
+    avatarColor: "#af98e8ff",
     rating: 5,
     revenue: "$41,000/mo",
     quote:
@@ -29,9 +29,9 @@ const testimonials = [
   },
   {
     name: "Luna V.",
-    niche: "Lifestyle Creator",
+    niche: "Only Fans",
     avatar: "LV",
-    avatarColor: "#e4cc17",
+    avatarColor: "#e417d3ff",
     rating: 5,
     revenue: "$15,500/mo",
     quote:
@@ -40,9 +40,9 @@ const testimonials = [
   },
   {
     name: "Mia R.",
-    niche: "Art & Entertainment",
+    niche: "Favenu",
     avatar: "MR",
-    avatarColor: "#d4af37",
+    avatarColor: "#a237d4ff",
     rating: 5,
     revenue: "$8,900/mo",
     quote:
@@ -51,9 +51,9 @@ const testimonials = [
   },
   {
     name: "Zara N.",
-    niche: "Gaming Creator",
+    niche: "Only Fans",
     avatar: "ZN",
-    avatarColor: "#e8a598",
+    avatarColor: "#e898bfff",
     rating: 5,
     revenue: "$28,000/mo",
     quote:
@@ -69,8 +69,8 @@ function StarRating({ rating }: { rating: number }) {
         <Star
           key={i}
           size={14}
-          fill={i < rating ? "#fbbf24" : "none"}
-          stroke={i < rating ? "#fbbf24" : "rgba(255,255,255,0.2)"}
+          fill={i < rating ? "#24fb44ff" : "none"}
+          stroke={i < rating ? "#24fb8cff" : "rgba(255,255,255,0.2)"}
         />
       ))}
     </div>
@@ -119,7 +119,7 @@ export default function Testimonials() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 60% at 50% 80%, rgba(212, 175, 55, 0.03) 0%, transparent 70%)",
+            "radial-gradient(ellipse 80% 60% at 50% 80%, rgba(157, 55, 212, 0.03) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -156,7 +156,7 @@ export default function Testimonials() {
           <div
             className="relative rounded-3xl p-1 overflow-hidden"
             style={{
-              background: "linear-gradient(135deg, rgba(232,165,152,0.25), rgba(212,175,55,0.15), rgba(228,204,23,0.1))",
+              background: "linear-gradient(135deg, rgba(232,165,152,0.25), rgba(212, 55, 120, 0.15), rgba(228,204,23,0.1))",
             }}
           >
             <div
@@ -257,7 +257,7 @@ export default function Testimonials() {
                     width: i === current ? "24px" : "6px",
                     height: "6px",
                     background: i === current
-                      ? "linear-gradient(90deg, #e8a598, #d4af37)"
+                      ? "linear-gradient(90deg, #e498e8ff, #d437d1ff)"
                       : "rgba(255,255,255,0.2)",
                   }}
                 />

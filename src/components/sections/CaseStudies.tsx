@@ -70,10 +70,10 @@ function Sparkline({ data, color }: { data: number[]; color: string }) {
 
 const caseStudies = [
   {
-    creator: "Creator A",
-    niche: "Fitness & Lifestyle",
-    avatar: "A",
-    avatarColor: "#d4af37",
+    creator: "Julai .M",
+    niche: "Only fans",
+    avatar: "J",
+    avatarColor: "#ffffffff",
     revenue: "$18,400/mo",
     revenueGrowth: "+340%",
     followers: "47K",
@@ -81,14 +81,14 @@ const caseStudies = [
     monthlyGrowth: "+28%",
     duration: "6 months",
     chartData: [1200, 1800, 2400, 4100, 6800, 9200, 12400, 14600, 16900, 18400],
-    color: "#d4af37",
+    color: "#ffffffff",
     quote: "My revenue tripled in the first 90 days. Best decision I ever made.",
   },
   {
-    creator: "Creator B",
-    niche: "Fashion & Beauty",
-    avatar: "B",
-    avatarColor: "#e8a598",
+    creator: "Angelina Fer.",
+    niche: "Only Fans",
+    avatar: "A",
+    avatarColor: "#ff5331ff",
     revenue: "$31,200/mo",
     revenueGrowth: "+510%",
     followers: "128K",
@@ -96,14 +96,14 @@ const caseStudies = [
     monthlyGrowth: "+35%",
     duration: "8 months",
     chartData: [2100, 3400, 5800, 8200, 12400, 16800, 21000, 25600, 28900, 31200],
-    color: "#e8a598",
+    color: "#ec8fffff",
     quote: "I went from $5K to $31K monthly in under a year. Absolutely insane.",
   },
   {
-    creator: "Creator C",
-    niche: "Gaming & Entertainment",
-    avatar: "C",
-    avatarColor: "#e4cc17",
+    creator: "Sebrina",
+    niche: "Only Fans",
+    avatar: "S",
+    avatarColor: "#c517e4ff",
     revenue: "$9,800/mo",
     revenueGrowth: "+220%",
     followers: "22K",
@@ -111,7 +111,7 @@ const caseStudies = [
     monthlyGrowth: "+18%",
     duration: "4 months",
     chartData: [1800, 2200, 3100, 4200, 5500, 6800, 7600, 8400, 9100, 9800],
-    color: "#e4cc17",
+    color: "#e41795ff",
     quote: "Professional, private, and they actually deliver. No BS.",
   },
 ];
@@ -130,7 +130,7 @@ export default function CaseStudies() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(212, 175, 55, 0.03) 0%, transparent 60%)",
+            "radial-gradient(ellipse 80% 50% at 50% 0%, rgba(183, 55, 212, 0.03) 0%, transparent 60%)",
         }}
         aria-hidden="true"
       />
@@ -224,7 +224,7 @@ export default function CaseStudies() {
               {/* Stats row */}
               <div
                 className="mx-5 sm:mx-6 mb-5 sm:mb-6 p-3 sm:p-4 rounded-xl grid grid-cols-2 gap-3"
-                style={{ background: "rgba(26, 12, 20, 0.45)", border: "1px solid rgba(232, 165, 152, 0.08)" }}
+                style={{ background: "rgba(26, 12, 20, 0.45)", border: "1px solid rgba(255, 232, 227, 0.08)" }}
               >
                 <div className="text-center">
                   <div className="flex items-center justify-center gap-1 mb-0.5">

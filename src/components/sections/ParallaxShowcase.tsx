@@ -225,7 +225,7 @@ export default function ParallaxShowcase() {
                       {[35, 45, 40, 55, 60, 50, 70, 85, 95, 100].map((h, i) => (
                         <div
                           key={i}
-                          className="w-full rounded-t bg-gradient-to-t from-amber-gold/40 to-rose-gold/90 transition-all duration-500 hover:opacity-100"
+                          className="w-full rounded-t bg-gradient-to-t from-[#ff1489]/40 to-[#d437ca4d]/90 transition-all duration-500 hover:opacity-100"
                           style={{
                             height: `${h}%`,
                             opacity: 0.4 + i * 0.06,

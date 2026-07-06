@@ -11,7 +11,7 @@ const steps = [
     title: "Apply",
     description:
       "Fill out our quick application to tell us about your current numbers, goals, and niche. Takes 3 minutes.",
-    color: "#d4af37",
+    color: "#d437a7ff",
   },
   {
     number: "02",
@@ -19,7 +19,7 @@ const steps = [
     title: "Discovery Call",
     description:
       "A senior strategist reviews your profile and holds a confidential 1-on-1 strategy session with you.",
-    color: "#e8a598",
+    color: "#d437a7ff",
   },
   {
     number: "03",
@@ -27,7 +27,7 @@ const steps = [
     title: "Strategy",
     description:
       "We build a custom growth roadmap tailored to your brand, audience, and revenue targets.",
-    color: "#e4cc17",
+    color: "#d437a7ff",
   },
   {
     number: "04",
@@ -35,7 +35,7 @@ const steps = [
     title: "Launch",
     description:
       "Your dedicated team is assembled and onboarded. We go live within 48 hours of signing.",
-    color: "#d4af37",
+    color: "#d437a7ff",
   },
   {
     number: "05",
@@ -43,7 +43,7 @@ const steps = [
     title: "Scale",
     description:
       "Watch your revenue climb month over month as our systems compound your growth continuously.",
-    color: "#e8a598",
+    color: "#e898e3ff",
   },
 ];
 
@@ -62,7 +62,7 @@ export default function HowItWorks() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(212, 175, 55, 0.04) 0%, transparent 70%)",
+            "radial-gradient(ellipse 70% 60% at 50% 100%, rgba(199, 55, 212, 0.04) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -102,7 +102,7 @@ export default function HowItWorks() {
               animate={inView ? { scaleX: 1 } : {}}
               transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
               className="absolute top-10 left-[10%] right-[10%] h-px origin-left"
-              style={{ background: "linear-gradient(90deg, #e8a598, #d4af37, #e4cc17)" }}
+              style={{ background: "linear-gradient(90deg, #ff0a0aff, #37d4b7ff, #e417b8ff)" }}
               aria-hidden="true"
             />
           </div>
@@ -138,12 +138,12 @@ export default function HowItWorks() {
                   </div>
 
                   <h3
-                    className="text-white font-bold text-lg mb-3"
-                    style={{ fontFamily: "var(--font-display)" }}
+                    className="text-white font-dmMono font-syne text-lg mb-3"
+                    style={{ fontFamily: "var(--font-syne)" }}
                   >
                     {step.title}
                   </h3>
-                  <p className="text-white/45 text-sm leading-relaxed">{step.description}</p>
+                  <p className="text-white/45 text-sm font-syne leading-relaxed">{step.description}</p>
                 </motion.div>
               );
             })}
@@ -182,13 +182,13 @@ export default function HowItWorks() {
                 {/* Content */}
                 <div className="pt-1">
                   <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs font-bold" style={{ color: step.color }}>
+                    <span className="text-xs font-dmMono" style={{ color: step.color }}>
                       Step {i + 1}
                     </span>
                     <span className="text-xs text-white/20">—</span>
                   </div>
                   <h3
-                    className="text-white font-semibold text-base mb-2"
+                    className="text-white font-dmMono text-base mb-2"
                     style={{ fontFamily: "var(--font-display)" }}
                   >
                     {step.title}

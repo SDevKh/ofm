@@ -128,7 +128,7 @@ export default function LiveProof() {
       <div
         className="absolute bottom-[10%] left-[-10%] w-[500px] h-[500px] rounded-full pointer-events-none opacity-20"
         style={{
-          background: "radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(212, 55, 170, 0.08) 0%, transparent 70%)",
           filter: "blur(80px)",
         }}
         aria-hidden="true"

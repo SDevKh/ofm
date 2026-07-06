@@ -51,7 +51,7 @@ export default function CTAContact() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "linear-gradient(135deg, rgba(232, 165, 152, 0.08) 0%, rgba(212, 175, 55, 0.12) 50%, rgba(228, 204, 23, 0.06) 100%)",
+              "linear-gradient(135deg, rgba(232, 165, 152, 0.08) 0%, rgba(212, 55, 162, 0.12) 50%, rgba(228, 204, 23, 0.06) 100%)",
             backgroundSize: "200% 200%",
             animation: "gradient-shift 8s ease infinite",
           }}
@@ -61,7 +61,7 @@ export default function CTAContact() {
           className="absolute inset-0 pointer-events-none"
           style={{
             background:
-              "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(212, 175, 55, 0.05) 0%, transparent 70%)",
+              "radial-gradient(ellipse 80% 60% at 50% 50%, rgba(212, 55, 201, 0.05) 0%, transparent 70%)",
           }}
           aria-hidden="true"
         />
@@ -69,12 +69,12 @@ export default function CTAContact() {
         {/* Glowing border top/bottom */}
         <div
           className="absolute top-0 left-0 right-0 h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(232, 165, 152, 0.35), rgba(212, 175, 55, 0.35), transparent)" }}
+          style={{ background: "linear-gradient(90deg, transparent, rgba(232, 152, 187, 0.35), rgba(212, 55, 165, 0.35), transparent)" }}
           aria-hidden="true"
         />
         <div
           className="absolute bottom-0 left-0 right-0 h-px"
-          style={{ background: "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.25), rgba(228, 204, 23, 0.25), transparent)" }}
+          style={{ background: "linear-gradient(90deg, transparent, rgba(212, 55, 128, 0.25), rgba(204, 23, 228, 0.25), transparent)" }}
           aria-hidden="true"
         />
 
@@ -164,7 +164,7 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
+                    style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 55, 173, 0.22)" }}
                   >
                     <Mail size={16} style={{ color: "var(--color-rose-gold)" }} />
                   </div>
@@ -177,7 +177,7 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(232, 165, 152, 0.08)", border: "1px solid rgba(232, 165, 152, 0.2)" }}
+                    style={{ background: "rgba(232, 165, 152, 0.08)", border: "1px solid rgba(197, 152, 232, 0.2)" }}
                   >
                     <InstagramIcon size={16} />
                   </div>
@@ -190,7 +190,7 @@ export default function CTAContact() {
                 >
                   <div
                     className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ background: "rgba(228, 204, 23, 0.08)", border: "1px solid rgba(228, 204, 23, 0.2)" }}
+                    style={{ background: "rgba(228, 23, 146, 0.08)", border: "1px solid rgba(228, 23, 132, 0.2)" }}
                   >
                     <TwitterIcon size={16} />
                   </div>
@@ -204,8 +204,8 @@ export default function CTAContact() {
                 style={{ background: "rgba(212, 175, 55, 0.08)", border: "1px solid rgba(212, 175, 55, 0.22)" }}
               >
                 <div className="flex items-center gap-2 mb-1">
-                  <CheckCircle size={14} style={{ color: "#d4af37" }} />
-                  <span className="text-xs font-semibold" style={{ color: "#d4af37" }}>100% Confidential</span>
+                  <CheckCircle size={14} style={{ color: "#d437c9ff" }} />
+                  <span className="text-xs font-semibold" style={{ color: "#d437baff" }}>100% Confidential</span>
                 </div>
                 <p className="text-xs text-white/40">
                   Your information is never shared. All applications are reviewed in strict confidence by senior team members only.
@@ -262,7 +262,7 @@ export default function CTAContact() {
                           background: "rgba(26, 12, 20, 0.45)",
                           border: "1px solid rgba(232, 165, 152, 0.08)",
                         }}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 55, 201, 0.4)")}
                         onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                       />
                     </div>
@@ -281,7 +281,7 @@ export default function CTAContact() {
                           background: "rgba(26, 12, 20, 0.45)",
                           border: "1px solid rgba(232, 165, 152, 0.08)",
                         }}
-                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                        onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(175, 55, 212, 0.38)")}
                         onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                       />
                     </div>
@@ -323,7 +323,7 @@ export default function CTAContact() {
                         background: "rgba(26, 12, 20, 0.45)",
                         border: "1px solid rgba(232, 165, 152, 0.08)",
                       }}
-                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 175, 55, 0.4)")}
+                      onFocus={(e) => (e.currentTarget.style.borderColor = "rgba(212, 55, 196, 0.4)")}
                       onBlur={(e) => (e.currentTarget.style.borderColor = "rgba(232, 165, 152, 0.08)")}
                     />
                   </div>

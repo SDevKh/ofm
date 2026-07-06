@@ -57,8 +57,8 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
       transition={{ delay: index * 0.06 }}
       className="rounded-2xl overflow-hidden transition-all duration-300"
       style={{
-        background: open ? "rgba(212, 175, 55, 0.06)" : "rgba(26, 12, 20, 0.45)",
-        border: open ? "1px solid rgba(212, 175, 55, 0.22)" : "1px solid rgba(232, 165, 152, 0.08)",
+        background: open ? "rgba(209, 55, 212, 0.06)" : "rgba(26, 12, 20, 0.45)",
+        border: open ? "1px solid rgba(212, 55, 186, 0.22)" : "1px solid rgba(232, 165, 152, 0.08)",
       }}
     >
       <button
@@ -76,7 +76,7 @@ function FAQItem({ q, a, index }: { q: string; a: string; index: number }) {
           className="w-8 h-8 rounded-full flex items-center justify-center flex-shrink-0 transition-all duration-300"
           style={{
             background: open
-              ? "linear-gradient(135deg, #e8a598, #d4af37)"
+              ? "linear-gradient(135deg, #e8a598, #d4378bff)"
               : "rgba(26, 12, 20, 0.45)",
           }}
         >
@@ -124,7 +124,7 @@ export default function FAQ() {
         className="absolute inset-0 pointer-events-none"
         style={{
           background:
-            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 70%)",
+            "radial-gradient(ellipse 60% 40% at 50% 50%, rgba(212, 55, 183, 0.03) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
@@ -152,7 +152,7 @@ export default function FAQ() {
             <a
               href="mailto:hello@apsaracreator.agency"
               className="underline underline-offset-2"
-              style={{ color: "#d4af37" }}
+              style={{ color: "#d437baff" }}
             >
               hello@apsaracreator.agency
             </a>

@@ -314,7 +314,7 @@ export default function LiveProof() {
                     alt={filteredItems[activeIdx].title}
                     className="max-w-full h-auto object-contain max-h-[60vh]"
                   />
-                  <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-[#180d20]/95 border border-white/20 text-xs font-semibold text-rose-gold tracking-wide">
+                  <div className="absolute top-4 left-4 px-3.5 py-1.5 rounded-full bg-white/95 border border-white/20 text-xs font-semibold text-rose-gold tracking-wide">
                     {filteredItems[activeIdx].badge}
                   </div>
                 </div>

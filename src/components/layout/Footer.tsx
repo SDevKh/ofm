@@ -23,7 +23,7 @@ function InstagramIcon({ size = 15 }: { size?: number }) {
 
 const footerLinks = {
   Company: [
-    { label: "About Us", href: "/" },
+    { label: "About Us", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Results", href: "/results" },
     { label: "Process", href: "/process" },

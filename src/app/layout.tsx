@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans, DM_Mono, Geist, Syne, Caveat } from "next/font/google";
+import { Playfair_Display, DM_Sans, DM_Mono, Geist, Syne, Caveat, Lobster_Two, Cinzel, Barriecito } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar, NavBody, NavItems, MobileNav, MobileNavHeader, MobileNavMenu, MobileNavToggle, NavbarLogo, NavbarButton } from "@/components/ui/resizable-navbar";
+import LenisProvider from "@/components/layout/LenisProvider";
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 const navItems = [
@@ -43,6 +44,27 @@ const caveat = Caveat({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   variable: "--font-caveat",
+  display: "swap",
+});
+
+const lobsterTwo = Lobster_Two({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-lobster-two",
+  display: "swap",
+});
+
+const cinzel = Cinzel({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  variable: "--font-cinzel",
+  display: "swap",
+});
+
+const barriecito = Barriecito({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-barriecito",
   display: "swap",
 });
 
@@ -127,7 +149,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={cn(playfair.variable, dmSans.variable, dmMono.variable, syne.variable, caveat.variable, "font-sans", geist.variable)}
+      className={cn(playfair.variable, dmSans.variable, dmMono.variable, syne.variable, caveat.variable, lobsterTwo.variable, cinzel.variable, barriecito.variable, "font-sans", geist.variable)}
     >
       <head>
         <script
@@ -137,7 +159,9 @@ export default function RootLayout({
         <link rel="canonical" href="https://apsaracreator.agency" />
       </head>
       <body className="antialiased">
-        {children}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
       </body>
     </html>
   );

@@ -10,7 +10,6 @@ import ParallaxShowcase from "@/components/sections/ParallaxShowcase";
 import HowItWorks from "@/components/sections/HowItWorks";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import CaseStudies from "@/components/sections/CaseStudies";
-
 import Testimonials from "@/components/sections/Testimonials";
 import FAQ from "@/components/sections/FAQ";
 import CTAContact from "@/components/sections/CTAContact";

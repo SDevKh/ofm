@@ -21,6 +21,9 @@
   --font-mono: var(--font-dm-mono), monospace;
   --font-syne: var(--font-syne), sans-serif;
   --font-caveat: var(--font-caveat), cursive;
+  --font-lobster-two: var(--font-lobster-two), cursive;
+  --font-cinzel: var(--font-cinzel), serif;
+  --font-barriecito: var(--font-barriecito), cursive;
 
   /* Spacing */
   --spacing-section: 5rem;
@@ -149,8 +152,10 @@
   box-sizing: border-box;
 }
 
-html {
+html:not(.lenis) {
   scroll-behavior: smooth;
+}
+html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scrollbar-width: thin;
@@ -328,3 +333,60 @@ body::before {
   overflow: hidden;
   transition: height 0.3s ease;
 }
+
+/* About Us Fullscreen Reveal Scroll Animations */
+.work_section {
+  position: relative;
+  width: 100%;
+}
+
+.sticky_work-wrapper {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #0e0712;
+  z-index: 5;
+}
+
+.work_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: clip-path, filter;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.work_item.active-events {
+  pointer-events: auto;
+}
+
+.ghost_work-container {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ghost_work-item {
+  width: 100%;
+  height: 300vh; /* Controlled scroll space per panel */
+}
+
+.text-line-wrapper {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+
+[data-line] {
+  display: inline-block;
+  will-change: transform, rotate;
+}
